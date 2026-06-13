@@ -255,7 +255,7 @@ Ready to start. Pick where to begin:
 - [x] Write `requirements.txt`
 - [x] Write `.env.example` (environment variable template)
 - [x] Configure `.gitignore` (exclude `.env`, `*.json` key files)
-- [ ] Create GitHub repo (`ai-agentic`) and initial commit
+- [x] Create GitHub repo (`ai-agentic`) and initial commit
 
 ### Phase 3 — Tools Implementation
 

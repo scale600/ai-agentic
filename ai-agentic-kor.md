@@ -255,7 +255,7 @@ gcloud auth application-default login
 - [x] `requirements.txt` 작성
 - [x] `.env.example` 작성 (환경변수 템플릿)
 - [x] `.gitignore` 설정 (`.env`, `*.json` 키파일 제외)
-- [ ] GitHub 레포 생성 (`ai-agentic`) 및 초기 커밋
+- [x] GitHub 레포 생성 (`ai-agentic`) 및 초기 커밋
 
 ### Phase 3 — Tools 구현
 
