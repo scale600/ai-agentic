@@ -275,12 +275,12 @@ Ready to start. Pick where to begin:
 
 ### Phase 5 — Streamlit UI
 
-- [ ] `app/agent_client.py` — write Agent call wrapper
-- [ ] `app/main.py` — write basic Chat interface
-- [ ] Sidebar: GCP project ID input field + example prompt buttons
-- [ ] Main: implement real-time Reasoning trace display
-- [ ] Results: verify Markdown report rendering
-- [ ] Final local verification: `streamlit run app/main.py`
+- [x] `app/agent_client.py` — write Agent call wrapper
+- [x] `app/main.py` — write basic Chat interface
+- [x] Sidebar: GCP project ID input field + example prompt buttons
+- [x] Main: implement real-time Reasoning trace display
+- [x] Results: verify Markdown report rendering
+- [x] Final local verification: `streamlit run app/main.py`
 
 ### Phase 6 — Containerization & Deployment
 
