@@ -1,0 +1,20 @@
+# Environment
+.env
+*.json
+!package.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/*.tfvars
+
+# OS
+.DS_Store
