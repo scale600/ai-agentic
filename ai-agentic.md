@@ -284,13 +284,13 @@ Ready to start. Pick where to begin:
 
 ### Phase 6 — Containerization & Deployment
 
-- [ ] Write `Dockerfile` and test with `docker build` locally
-- [ ] Verify container runs correctly with `docker run`
-- [ ] Write `terraform/main.tf` (Cloud Run, IAM, Secret Manager)
-- [ ] Verify with `terraform init && terraform plan`
-- [ ] `terraform apply` — provision Cloud Run service
-- [ ] Register environment variables in Secret Manager
-- [ ] Verify Cloud Run URL is accessible after deployment
+- [x] Write `Dockerfile` and test with `docker build` locally
+- [x] Verify container runs correctly with `docker run`
+- [x] Write `terraform/main.tf` (Cloud Run, IAM, Secret Manager)
+- [x] Verify with `terraform init && terraform plan`
+- [x] `terraform apply` — provision Cloud Run service
+- [x] Register environment variables in Secret Manager
+- [x] Verify Cloud Run URL is accessible after deployment
 
 ### Phase 7 — CI/CD + Domain
 
