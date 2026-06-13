@@ -294,15 +294,15 @@ Ready to start. Pick where to begin:
 
 ### Phase 7 — CI/CD + Domain
 
-- [ ] Write GitHub Actions `deploy.yml`
-- [ ] Configure Workload Identity Federation (deploy without SA key files)
+- [x] Write GitHub Actions `deploy.yml`
+- [x] Configure Workload Identity Federation (deploy without SA key files)
 - [ ] Verify main branch push triggers auto-deploy
 - [ ] Cloudflare DNS: add `ai-agentic.techcloudup.com` CNAME record
 - [ ] Final verification: HTTPS access and external execution
 
 ### Phase 8 — Documentation
 
-- [ ] Write `README.md` (project description, Architecture diagram, quickstart guide)
-- [ ] Capture demo screenshot or GIF and embed in README
+- [x] Write `README.md` (project description, Architecture diagram, quickstart guide)
+- [x] Capture demo screenshot or GIF and embed in README
 - [ ] Set GitHub Topics: `agentic-ai` `vertex-ai` `google-adk` `gemini` `langchain` `gcp` `python`
 - [ ] Confirm all 5 completion criteria are checked off
