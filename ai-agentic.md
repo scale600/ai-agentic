@@ -267,11 +267,11 @@ Ready to start. Pick where to begin:
 
 ### Phase 4 — Agent Implementation
 
-- [ ] `agents/iam_audit_agent.py` — write ADK `LlmAgent` base structure
-- [ ] `agents/iam_audit_agent.py` — connect tools and verify ReAct pattern behavior
-- [ ] `agents/supervisor.py` — write Supervisor Agent
-- [ ] `agents/supervisor.py` — connect sub-agent (`iam_audit_agent`) orchestration
-- [ ] End-to-end CLI test (`python agents/supervisor.py`)
+- [x] `agents/iam_audit_agent.py` — write ADK `LlmAgent` base structure
+- [x] `agents/iam_audit_agent.py` — connect tools and verify ReAct pattern behavior
+- [x] `agents/supervisor.py` — write Supervisor Agent
+- [x] `agents/supervisor.py` — connect sub-agent (`iam_audit_agent`) orchestration
+- [x] End-to-end CLI test (`python agents/supervisor.py`)
 
 ### Phase 5 — Streamlit UI
 

@@ -267,11 +267,11 @@ gcloud auth application-default login
 
 ### Phase 4 — Agent 구현
 
-- [ ] `agents/iam_audit_agent.py` — ADK `LlmAgent` 기본 구조 작성
-- [ ] `agents/iam_audit_agent.py` — Tool 연결 및 ReAct 패턴 동작 확인
-- [ ] `agents/supervisor.py` — Supervisor Agent 작성
-- [ ] `agents/supervisor.py` — Sub-agent(`iam_audit_agent`) 오케스트레이션 연결
-- [ ] CLI로 end-to-end 실행 테스트 (`python agents/supervisor.py`)
+- [x] `agents/iam_audit_agent.py` — ADK `LlmAgent` 기본 구조 작성
+- [x] `agents/iam_audit_agent.py` — Tool 연결 및 ReAct 패턴 동작 확인
+- [x] `agents/supervisor.py` — Supervisor Agent 작성
+- [x] `agents/supervisor.py` — Sub-agent(`iam_audit_agent`) 오케스트레이션 연결
+- [x] CLI로 end-to-end 실행 테스트 (`python agents/supervisor.py`)
 
 ### Phase 5 — Streamlit UI
 
