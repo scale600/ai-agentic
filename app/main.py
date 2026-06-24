@@ -14,14 +14,7 @@ st.set_page_config(
 with st.sidebar:
     st.markdown(
         """
-        <style>
-        [data-testid="stSidebar"] > div:first-of-type {
-            display: flex !important;
-            flex-direction: column !important;
-        }
-        [data-testid="stSidebarNav"] { order: 2 !important; }
-        </style>
-        <div style="order: 1; margin-bottom: 16px;">
+        <div style="margin-bottom: 16px;">
             <div style="display:flex; gap:14px; align-items:center; margin-bottom:12px;">
                 <a href="https://project.techcloudup.com" target="_blank" title="TechCloudUp">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9e9e9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -48,11 +41,17 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
+    st.divider()
+
+    st.page_link("pages/audit.py", label="IAM Audit", icon="🔐")
+    st.page_link("pages/about.py", label="About", icon="ℹ️")
+    st.page_link("pages/how_it_works.py", label="How it Works", icon="🔧")
+
 # ── Navigation ────────────────────────────────────────────────────────────────
 pg = st.navigation([
-    st.Page("pages/audit.py", title="IAM Audit", icon="🔐"),
-    st.Page("pages/about.py", title="About", icon="ℹ️"),
-    st.Page("pages/how_it_works.py", title="How it Works", icon="🔧"),
-])
+    st.Page("pages/audit.py"),
+    st.Page("pages/about.py"),
+    st.Page("pages/how_it_works.py"),
+], position="hidden")
 
 pg.run()
