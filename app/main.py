@@ -9,6 +9,22 @@ st.set_page_config(
     page_title="AI Agent — GCP IAM Audit",
     page_icon="🔐",
     layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
+st.markdown(
+    """
+    <style>
+    @media (max-width: 576px) {
+        h1 { font-size: 1.4rem !important; }
+        h2 { font-size: 1.15rem !important; }
+        h3 { font-size: 1rem !important; }
+    }
+    pre { overflow-x: auto; white-space: pre; }
+    [data-testid="stTable"] { overflow-x: auto; }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
 # ── Sidebar (shared across all pages) ──────────────────────────────────────────
