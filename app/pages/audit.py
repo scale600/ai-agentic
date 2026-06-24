@@ -9,7 +9,7 @@ if "pending_prompt" not in st.session_state:
     st.session_state.pending_prompt = None
 
 # ── Project config ────────────────────────────────────────────────────────────
-col1, col2 = st.columns([2, 1])
+col1, col2 = st.columns([3, 1], vertical_alignment="center")
 with col1:
     project_id = st.text_input(
         "GCP Project ID",
@@ -18,8 +18,6 @@ with col1:
         key="project_id_input",
     )
 with col2:
-    st.caption("")
-    st.caption("")
     if st.button("🔄 Connect", use_container_width=True):
         st.rerun()
 

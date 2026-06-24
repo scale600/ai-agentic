@@ -7,6 +7,9 @@ textColor = "#FAFAFA"
 
 [server]
 maxUploadSize = 10
+baseUrlPath = ""
+enableXsrfProtection = true
+enableCORS = false
 
 [browser]
 gatherUsageStats = false
