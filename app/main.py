@@ -12,14 +12,9 @@ st.set_page_config(
 
 # ── Sidebar header (shared across all pages) ──────────────────────────────────
 with st.sidebar:
-    st.title("🔐 AI Agent")
-    st.caption("GCP IAM Audit Agent · Google ADK + Gemini on Vertex AI")
-
-    st.divider()
-
     st.markdown(
         """
-        <div style="display:flex; gap:14px; align-items:center;">
+        <div style="display:flex; gap:14px; align-items:center; margin-bottom:12px;">
             <a href="https://project.techcloudup.com" target="_blank" title="TechCloudUp">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9e9e9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/>
@@ -41,6 +36,9 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
     )
+
+    st.title("🔐 AI Agent")
+    st.caption("GCP IAM Audit Agent · Google ADK + Gemini on Vertex AI")
 
 # ── Navigation ────────────────────────────────────────────────────────────────
 pg = st.navigation([
