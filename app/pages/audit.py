@@ -2,13 +2,40 @@ import streamlit as st
 from app.agent_client import run_agent
 from config.settings import GCP_PROJECT_ID
 
-project_id = st.session_state.get("sidebar_project_id", GCP_PROJECT_ID)
-
 # ── Session state ─────────────────────────────────────────────────────────────
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "pending_prompt" not in st.session_state:
     st.session_state.pending_prompt = None
+
+# ── Project config ────────────────────────────────────────────────────────────
+col1, col2 = st.columns([2, 1])
+with col1:
+    project_id = st.text_input(
+        "GCP Project ID",
+        value=GCP_PROJECT_ID,
+        placeholder="your-project-id",
+        key="project_id_input",
+    )
+with col2:
+    st.caption("")
+    st.caption("")
+    if st.button("🔄 Connect", use_container_width=True):
+        st.rerun()
+
+examples = [
+    "Audit IAM policies and generate a full security report",
+    "Find service accounts with excessive permissions",
+    "Check for public access (allUsers) in IAM bindings",
+]
+cols = st.columns(len(examples))
+for i, example in enumerate(examples):
+    with cols[i]:
+        if st.button(example, use_container_width=True, key=f"prompt_{i}"):
+            st.session_state.pending_prompt = example
+            st.rerun()
+
+st.divider()
 
 # ── Main area ─────────────────────────────────────────────────────────────────
 st.title("GCP IAM Audit Agent")

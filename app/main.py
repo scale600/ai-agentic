@@ -3,7 +3,6 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import streamlit as st
-from config.settings import GCP_PROJECT_ID
 
 st.set_page_config(
     page_title="AI Agent — GCP IAM Audit",
@@ -59,24 +58,6 @@ with st.sidebar:
     )
 
     st.divider()
-
-    project_id = st.text_input(
-        "GCP Project ID",
-        value=GCP_PROJECT_ID,
-        placeholder="your-project-id",
-        key="sidebar_project_id",
-    )
-
-    st.markdown("**Example prompts**")
-    examples = [
-        "Audit IAM policies and generate a full security report",
-        "Find service accounts with excessive permissions",
-        "Check for public access (allUsers) in IAM bindings",
-    ]
-    for example in examples:
-        if st.button(example, use_container_width=True, key=f"sidebar_ex_{example[:20]}"):
-            st.session_state.pending_prompt = example
-            st.switch_page("pages/audit.py")
 
 # ── Navigation ────────────────────────────────────────────────────────────────
 pg = st.navigation([
